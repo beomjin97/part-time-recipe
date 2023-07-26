@@ -1,5 +1,3 @@
-import { Menu } from "./type";
-
 export const allMenu: {
   [key: string]: string[];
 } = {
