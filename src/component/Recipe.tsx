@@ -6,11 +6,14 @@ const Recipe = () => {
     return <div>등록되지 않은 메뉴입니다. 관리자에게 문의하세요</div>;
   }
   return (
-    <ol>
-      {recipe[menu].map((i, idx) => (
-        <li key={idx}>{i}</li>
-      ))}
-    </ol>
+    <>
+      <h1>{menu}</h1>
+      <ol>
+        {recipe[menu].map((i, idx) => (
+          <li key={idx}>{i}</li>
+        ))}
+      </ol>
+    </>
   );
 };
 
