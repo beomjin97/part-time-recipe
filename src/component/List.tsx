@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { allMenu } from "../data/menu";
 
 interface Props {
@@ -21,7 +21,11 @@ const List = ({ varient }: Props) => {
       </h2>
       <ul>
         {allMenu[varient].map((i) => (
-          <li style={{ display: isVisible ? "block" : "none" }}>
+          <li
+            style={{
+              display: isVisible ? "block" : "none",
+            }}
+          >
             <a href={`/${i}`}>{i}</a>
           </li>
         ))}

@@ -26,3 +26,34 @@ export enum Menu {
   스무디,
   에이드,
 }
+
+export interface Recipe {
+  ingredients: string[];
+  order: string[];
+  plate?: Plate;
+  cup?: Cup;
+  straw?: Straw;
+  decoration?: string[];
+}
+
+export enum Plate {
+  넓은그릇 = 1,
+  라면그릇,
+  호떡용지,
+  종이트레이,
+  핫도그트레이,
+  긴핫도그트레이,
+}
+
+export enum Cup {
+  XL컵,
+  L컵,
+  종이컵,
+}
+
+export enum Straw {
+  굵은빨대,
+  얇은빨대,
+  유색빨대,
+  검은색빨대,
+}
